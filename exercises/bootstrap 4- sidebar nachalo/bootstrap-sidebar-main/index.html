@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href=".//css/bootstrap.min.css">
+    <link rel="stylesheet" href=".//css/boxicons.min.css">
+    <link rel="stylesheet" href=".//css/owl.theme.default.min.css">
+    <link rel="stylesheet" href=".//css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar With Bootstrap</title>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="wrapper" id="home">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="h-100">
+                <!--<div class="sidebar-logo">
+                    <a href="#">DanielEOOD</a>
+                </div>-->
+
+                <div class="row">
+                    <div class="col-sm-12 sidebar-logo1">
+                        <a href="#" class="sidebar-logo">Daniel<span>EOOD</span></a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Sidebar Navigation -->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Tools & Components
+                    </li>
+                    <!--Components-->
+                    <li class="sidebar-item">
+                        <a href="#home" class="sidebar-link">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#about" class="sidebar-link">
+                            <i class="fa-solid fa-address-card"></i>
+                            About
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#service" class="sidebar-link">
+                            <i class="fa-solid fa-laptop-file"></i>
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#projects" class="sidebar-link">
+                            <i class="fa-solid fa-address-book"></i>
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#team" class="sidebar-link">
+                            <i class="fa-solid fa-people-group"></i>
+                            Team
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#review" class="sidebar-link">
+                            <i class="fa-solid fa-medal"></i>
+                            Reviews
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#blog" class="sidebar-link">
+                            <i class="fa-solid fa-blog"></i>
+                            Blog
+                        </a>
+                    </li>
+
+
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expanded="false" aria-controls="pages">
+                            <i class="fa-regular fa-file-lines pe-2"></i>
+                            Pages
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Ecommerce</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Crypto</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard"
+                            aria-expanded="false" aria-controls="dashboard">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            Dashboard
+                        </a>
+                        <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Dashboard Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Dashboard Ecommerce</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#auth"
+                            aria-expanded="false" aria-controls="auth">
+                            <i class="fa-regular fa-user pe-2"></i>
+                            Auth
+                        </a>
+                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Login</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Register</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-header">
+                        Multi Level Nav
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi"
+                            aria-expanded="false" aria-controls="multi">
+                            <i class="fa-solid fa-share-nodes pe-2"></i>
+                            Multi Level
+                        </a>
+                        <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                    Two Links
+                                </a>
+                                <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">Link 1</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">Link 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Main-->
+        <div class="main">
+            <!--Top NavBar-->
+            <nav class="top-nav">
+                <div class="container">
+                    <div class="row justify-content-between"> <!-- мести ги вдяс-->
+                        <div class="col-auto">
+                            <p>
+                                <i class='bx bxs-envelope'></i>
+                                <span> daniborisov085@abv.bg</span>
+                            </p>
+                            <p>
+                                <i class='bx bxs-phone-call'></i>
+                                <span> 087 359 2060</span>
+                            </p>
+                        </div>
+
+
+
+                        <!--Navbar-->
+                        <div class="col-auto" id="home">
+                            <div class="social-links">
+                                <a href="#"> <i class='bx bxl-facebook-circle'></i></a>
+                                <a href="#"> <i class='bx bxl-twitter'></i></a>
+                                <a href="#"> <i class='bx bxl-instagram'></i></a>
+                                <a href="#"> <i class='bx bxl-youtube'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!--NavBar-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+                <div class="container"> <!-- <div class="container-fluid">- пробвай и виж на NavBara e-->
+
+
+
+
+
+                    <!-- Button for sidebar toggle -->
+                    <button class="btn butonche" type="button" data-bs-theme="dark">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+
+
+
+                    <a class="navbrandbar" href="#">Daniel<span>EOOD</span></a>
+                    <button class="navbar-toggler" id="NavButton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+
+
+                        </ul>
+                        <a href="#" class="btn btn-brand ms-lg-3" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Contact us</a>
+                        <!--ms-lg-3- разтояние-->
+
+                    </div>
+
+                </div>
+            </nav>
+
+
+
+            <!--Main content-->
+            <main class="content">
+
+
+                <!--Slidebar-->
+                <div class="slider-wrapper owl-carousel owl-theme" id="hero-slider">
+                    <div class="slide1 text-white min-vh-100 bg-cover d-flex align-items-center ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--<div class="col-12  text-sm-center" style="margin-top: 550px">-->
+                                    <h6 class="text-uppercase text-white ">We craft digital epxeriances</h6>
+                                    <h1 class="display-2 my-3  text-uppercase">Design Driven for <br>Professionals</h1>
+                                    <a href="#" class="btn btn-brand">Get Started</a>
+                                    <a href="#" class="btn btn-outline-light ms-md-3">Our Work</a> <!-- ms-margin -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide2 text-white min-vh-100 bg-cover d-flex  align-items-center" id="hero-slider2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <!--<div class="col-12  text-sm-center" style="margin-top: 550px">-->
+                                    <h6 class="text-uppercase text-white">design driven for professionals</h6>
+                                    <h1 class="display-2 my-3 text-uppercase">We Craft Digital <br>Experiance</h1>
+                                    <a href="#" class="btn btn-brand">Get Started</a>
+                                    <a href="#" class="btn btn-outline-light ms-md-3">Our Work</a> <!-- ms-margin -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!--About-->
+                <section id="about">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-5">
+                                <div class="row">
+
+                                    <div class="col-12 info-box">
+                                        <img src="./img/aidename.jpg" alt="">
+                                        <div>
+                                            <h5>Digital Marketing</h5>
+                                            <p>It is a long established fact that a reader will be distracted by the
+                                                readable content of a page</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 info-box">
+                                        <img src="./img/aidename.jpg" alt="">
+
+                                        <div>
+                                            <h5>Digital Marketing</h5>
+                                            <p>It is a long established fact that a reader will be distracted by the
+                                                readable content of a page</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 info-box">
+                                        <img src="./img/aidename.jpg" alt="">
+
+                                        <div>
+                                            <h5>Digital Marketing</h5>
+                                            <p>It is a long established fact that a reader will be distracted by the
+                                                readable content of a page</p>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 info-box2">
+                                <img src=".//img/chefo.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <!--Milestone-->
+                <section id="milestone" class="bg-cover ">
+                    <div class="row gy-4 text-center justify-content-center">
+
+
+
+
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="display-4">7542</div>
+                            <p class="mb-0">Happy Clients</p>
+                        </div>
+
+
+
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="display-4">1257</div>
+                            <p class="mb-0">Happy Clients</p>
+                        </div>
+
+
+
+
+
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="display-4">412</div>
+                            <p class="mb-0">Happy Clients</p>
+                        </div>
+
+
+
+
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="display-4">875</div>
+                            <p class="mb-0">Happy Clients</p>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <!--service-->
+                <section id="service" class="service">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 intro text-center">
+                                <h6>DUR SERVICE</h6>
+                                <h1>What we do?</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia adipisci quibusdam
+                                    quis distinctio qui,
+                                    laboriosam nemo id debitis consequatur dolorem corrupti? Earum ad unde, non deserunt
+                                    tempore ratione porro
+                                    blanditiis.</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="service-box">
+                                    <img src=".//img/pepi.webp" alt="">
+                                    <h5>Digital Marketing</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium
+                                        deleniti assumenda,
+                                        reprehenderit expedita veniam?</p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="service-box">
+                                    <img src=".//img/pepi.webp" alt="">
+                                    <h5>Digital Marketing</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium
+                                        deleniti assumenda,
+                                        reprehenderit expedita veniam?</p>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="service-box">
+                                    <img src=".//img/pepi.webp" alt="">
+                                    <h5>Buisness consuling</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium
+                                        deleniti assumenda,
+                                        reprehenderit expedita veniam?</p>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="service-box">
+                                    <img src=".//img/klipartz.com.png" alt="">
+                                    <h5>Videography</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium
+                                        deleniti assumenda,
+                                        reprehenderit expedita veniam?</p>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="service-box">
+                                    <img src=".//img/klipartz.com.png" alt="">
+                                    <h5>Brand Tdentity</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium
+                                        deleniti assumenda,
+                                        reprehenderit expedita veniam?</p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="service-box">
+                                    <img src=".//img/klipartz.com.png" alt="">
+                                    <h5>Digital Marketing</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium
+                                        deleniti assumenda,
+                                        reprehenderit expedita veniam?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!--Project-->
+                <div id="projects" class="bg-light"> <!--service-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 intro text-center">
+                                <h6>OUR SERVIECE</h6>
+                                <h1>What we do?</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ipsa repellat
+                                    soluta qui blanditiis
+                                    odio?</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="project-slider" class="owl-carousel owl-theme">
+                        <div class="project">
+                            <img src="./img/momo.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <h1>Title</h1>
+                                <h6>Subscirbe</h6>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <img src="./img/nastigni ni.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <h1>Title</h1>
+                                <h6>Subscirbe</h6>
+                            </div>
+                        </div>
+
+
+                        <div class="project">
+                            <img src="./img/olqchika.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <h1>Title</h1>
+                                <h6>Subscirbe</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- TEAM -->
+                <section id="team">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 intro text-center">
+                                <h6>Team</h6>
+                                <h1>Team Members</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur maxime quod
+                                    molestias sunt fugit
+                                    quidem eius velit ullam, voluptates accusamus!</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-lg-4">
+
+                                <div class="team-member">
+
+                                    <div class="img-wrapper">
+
+                                        <img src="./img/person4.jpg" alt=""> <!--PERSON1-->
+                                        <div class="overlay"></div>
+
+
+
+                                        <div class="social-links">
+                                            <a href="#"> <i class='bx bxl-facebook'></i></a>
+                                            <a href="#"> <i class='bx bxl-twitter'></i></a>
+                                            <a href="#"> <i class='bx bxl-github'></i></a>
+                                            <a href="#"> <i class='bx bxl-youtube'></i></a>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="content">
+                                        <h5>Marvin McKinney</h5>
+                                        <p>Marketing Coordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--PERSON2-->
+                            <div class="col-lg-4">
+
+                                <div class="team-member">
+
+                                    <div class="img-wrapper">
+
+                                        <img src="./img/person2.jpg" alt="">
+                                        <div class="overlay"></div>
+
+
+
+                                        <div class="social-links">
+                                            <a href="#"> <i class='bx bxl-facebook'></i></a>
+                                            <a href="#"> <i class='bx bxl-twitter'></i></a>
+                                            <a href="#"> <i class='bx bxl-github'></i></a>
+                                            <a href="#"> <i class='bx bxl-youtube'></i></a>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="content">
+                                        <h5>Daniel Borisov</h5>
+                                        <p>Фитнесджия и front-end програмист</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--PERSON3-->
+                            <div class="col-lg-4">
+
+                                <div class="team-member">
+
+                                    <div class="img-wrapper">
+
+                                        <img src="./img/person3.jpg" alt="">
+                                        <div class="overlay"></div>
+
+
+
+                                        <div class="social-links">
+                                            <a href="#"> <i class='bx bxl-facebook'></i></a>
+                                            <a href="#"> <i class='bx bxl-twitter'></i></a>
+                                            <a href="#"> <i class='bx bxl-github'></i></a>
+                                            <a href="#"> <i class='bx bxl-youtube'></i></a>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="content">
+                                        <h5>Marvin McKinney</h5>
+                                        <p>Marketing Coordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+                <!--review-->
+                <section id="review" class="bg-cover">
+                    <div class="owl-carousel owl-theme" id="reviews-slider">
+                        <div class="review">
+                            <img src=".//img/person1.jpg" alt="">
+                            <h4>Jhoanthon Doe Klan</h4>
+                            <small>Web Developer</small>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam libero
+                                magnam eum excepturi
+                                facere dolores. Esse ipsam cumque placeat non possimus quae, sed adipisci?</p>
+                        </div>
+
+
+
+                        <div class="review">
+                            <img src=".//img/preson 1.0.jpg" alt="">
+                            <h4>Doe Klan Dimitrov</h4>
+                            <small>Web Developer</small>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam libero
+                                magnam eum excepturi
+                                facere dolores. Esse ipsam cumque placeat non possimus quae, sed adipisci?</p>
+                        </div>
+
+
+
+                        <div class="review">
+                            <img src=".//img/person 1.1.jpg" alt="">
+                            <h4>Klan Ivailov Todorov</h4>
+                            <small>Web Developer</small>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam libero
+                                magnam eum excepturi
+                                facere dolores. Esse ipsam cumque placeat non possimus quae, sed adipisci?</p>
+                        </div>
+
+
+
+
+                    </div>
+                </section>
+
+
+
+
+
+
+                <!--blog-->
+
+                <section id="blog">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 intro text-center">
+                                <h6>Blog</h6>
+                                <h1>Blog Posts</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo eum ab
+                                    quis at eveniet?
+                                    Adipisci alias officiis est nulla?</p>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="blog-post">
+                                    <a href="#" class="tag">Web design</a>
+                                    <img src=".//img/panamera.jpg" alt="">
+                                    <small>01 DEC, 2022</small>
+                                    <h4> <a href="#">Wed Design trends in 2022</a></h4>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo eum
+                                        ab quis at eveniet?
+                                        Adipisci alias officiis est nulla?</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-lg-4">
+                                <div class="blog-post">
+                                    <a href="#" class="tag">Web design</a>
+                                    <img src=".//img/panamera2.jpg" alt="">
+                                    <small>01 DEC, 2022</small>
+                                    <h4><a href="#">Wed Design trends in 2022</a></h4>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo eum
+                                        ab quis at eveniet?
+                                        Adipisci alias officiis est nulla?</p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-lg-4">
+                                <div class="blog-post">
+                                    <a href="#" class="tag">Web design</a>
+                                    <img src=".//img/panamera3.jpg" alt="">
+                                    <small>01 DEC, 2022</small>
+                                    <h4><a href="#">Wed Design trends in 2022</a></h4>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo eum
+                                        ab quis at eveniet?
+                                        Adipisci alias officiis est nulla?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <!--footer-->
+
+                <footer>
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-6 mx-auto"> <!--mx-auto- центрира ми текста-->
+                                    <a class="nav-brand" href="#">Даниел<span>ЕООД</span></a>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eius impedit
+                                        numquam placeat, ex veniam
+                                        voluptate nihil officiis! Nisi iure est libero cumque, impedit esse.</p>
+
+
+                                    <div class="social-links">
+                                        <a href="#"> <i class='bx bxl-facebook-circle'></i></a>
+                                        <a href="#"> <i class='bx bxl-twitter'></i></a>
+                                        <a href="#"> <i class='bx bxl-instagram'></i></a>
+                                        <a href="#"> <i class='bx bxl-youtube'></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <p class="mb-0">Copyright@2023 от Даниел Борисов</p>
+                        </div>
+                    </div>
+                </footer>
+
+
+                <!--Contact Us-->
+                <!--modal-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-body p-0">
+                                <!-- Просто не мога да го опиша но се забелязва как снимката запълва всичко-->
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-4 bg-cover"
+                                            style="background-image: url(../img/kamera1.jpg); min-height: 280px; width: 280px;">
+                                        </div>
+
+                                        <div class="col-lg-8">
+
+                                            <form class="row p-lg-5 gy-3 ">
+                                                <h1>Get in touch</h1>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                                                    maiores!</p>
+
+
+
+                                                <div class="col-6">
+                                                    <label for="exampleFormcontrolInput" class="form-label">First
+                                                        name</label>
+                                                    <input type="text" id="exampleFormcontrolInput" class="form-control"
+                                                        placeholder=" Jhon deo">
+                                                </div>
+
+
+
+                                                <div class="col-6">
+                                                    <label for="exampleFormcontrolInput" class="form-label">Last
+                                                        name</label>
+                                                    <input type="text" id="exampleFormcontrolInput" class="form-control"
+                                                        placeholder="Deo">
+                                                </div>
+
+
+
+                                                <div class="col-12">
+                                                    <label for="exampleFormcontrolInput"
+                                                        class="form-label">Email</label>
+                                                    <input type="email" id="exampleFormcontrolInput"
+                                                        class="form-control" placeholder="daniborisov085@abv.bg">
+                                                </div>
+
+
+                                                <div class="col-12">
+                                                    <label for="message" class=" form-label">Message</label>
+                                                    <textarea name="" id="" cols="30" rows="10" class="form-control"
+                                                        placeholder="Ти си най-добрия, Данка!"></textarea>
+                                                </div>
+
+
+
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-brand">Send Massage</button>
+                                                    <button type="submit" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./js/jqeuery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/app.js"></script>
+
+
+</body>
+
+</html>

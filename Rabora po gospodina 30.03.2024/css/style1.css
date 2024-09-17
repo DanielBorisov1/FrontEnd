@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,500;1,600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand: #EF8E34;
+    --button: #00A12D;
+}
+
+img {
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    transition: all 0.4s linear;
+    color: white;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+
+/*Navbar*/
+.navbar {
+    position: absolute !important;
+    /*position:fixed !important;- направи nav-a да се слива със slidera*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    /*display: flex;- пак центрира*/
+    /*padding-bottom: 30px; широчината на navbar*/
+    z-index: 999;
+    padding-top: 30px;
+    align-items: center;
+}
+
+#NavButton {
+    width: auto;
+    box-shadow: none;
+}
+
+.navbrandbar span {
+    color: var(--brand);
+    font-size: 39px;
+}
+
+.navbrandbar {
+    text-decoration: none;
+    font-size: 23px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    margin-left: 100px;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-item a {
+    color: white;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600px;
+    font-size: 18px;
+}
+
+.nav-item a:hover {
+    color: var(--brand) !important;
+}
+
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+/*active home
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .show>.nav-link:active {
+    color: var(--brand) !important;
+}*/
+
+/*Оцветяване на иконката за responsive navbar*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-nav {
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+}
+
+/*Контакти*/
+.btn-brand4.btn-brand4 {
+    background-color: var(--brand);
+    color: #ffffff;
+    width: 170px;
+    height: 40px;
+    border-radius: 500px;
+    margin-right: 100px;
+    font-weight: 500;
+    padding-right: 40px !important;
+}
+
+.telefon1 {
+    margin-right: 20px !important;
+}
+
+.btn-brand4:hover {
+    background-color: #ef8e34e3;
+}
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+
+    .navbrandbar {
+        margin-left: 25px !important;
+    }
+
+}
+
+@media screen and (max-width: 1368px) {
+
+    .navbar-nav li a {
+        width: 100% !important;
+        display: inline-block;
+    }
+
+    .btn-brand1 {
+        margin-top: 10px !important;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    /*Navbar*/
+    .nav-link {
+        font-size: 14px !important;
+    }
+
+    .navbrandbar {
+        margin-left: 0 !important;
+    }
+
+    .btn-brand4 {
+
+        margin-right: 0px !important;
+    }
+
+    /*Footer*/
+    .line1 {
+        width: 270px !important;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    /*NavBar*/
+    .navbar-collapse {
+        background-color: rgb(255, 255, 255) !important;
+        height: 435px;
+        /*-----*/
+    }
+
+    /*Navbar button*/
+    .btn-brand4 {
+        margin-top: 10px !important;
+    }
+
+    /*EFEECTA ZAD TEKSTA NA RESPONIV MENUTO*/
+    .navbar .nav-item.active {
+        background: var(--brand);
+        border-radius: 8px;
+        width: 300px;
+    }
+
+    .navbar .nav-item.active a,
+    .navbar .nav-item.active a:hover {
+        color: white;
+    }
+
+    .navbar .nav-item a {
+        color: #18e7e7;
+    }
+
+    .nav-item a:hover {
+        color: rgb(255, 255, 255) !important;
+    }
+
+
+   
+   
+
+    .collapse {
+        width: 100% !important;
+    }
+
+    .nav-item a {
+        color: rgb(0, 0, 0) !important;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+
+    .btn-brand4 {
+        align-items: center !important;
+        margin-left: 275px !important;
+    }
+
+    .navbar-nav {
+
+        justify-content: left !important;
+        align-items: left !important;
+    }
+
+
+    /*Footer*/
+    .line1 {
+        width: 130px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+    /*Navbar*/
+    .btn-brand4 {
+        align-items: center !important;
+        margin-left: 107px !important;
+    }
+
+    .navbar .nav-item.active {
+        background: var(--brand);
+        border-radius: 8px;
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+
+    /*Navbar*/
+    .btn-brand4 {
+        align-items: center !important;
+        margin-left: 80px !important;
+    }
+
+    .navbar .nav-item.active {
+        background: var(--brand);
+        border-radius: 8px;
+        width: 220px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+    /*Navbar*/
+    .btn-brand4 {
+        align-items: center !important;
+        margin-left: 55px !important;
+    }
+
+    .navbar .nav-item.active {
+        background: var(--brand);
+        border-radius: 8px;
+        width: 180px;
+    }
+
+    .btn-secondary {
+        margin-left: 80px !important;
+        margin-top: 10px !important;
+    }
+
+    .navbar {
+        padding-top: 30px !important;
+    }
+
+    /*footer*/
+    .line1 {
+        width: 100px !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*Contacts*/
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/Mask\ group.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.content {
+    padding-bottom: 100px;
+    padding-top: 200px;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 56px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+.contact .content p {
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width: 50%;
+
+    /* display: flex;*/
+    flex-direction: column;
+}
+
+/*Contacts*/
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+
+.container .contactInfo .box .text h3 {
+
+    color: #EF8E34;
+    font-weight: 500;
+}
+
+
+.contactForm {
+    width: 50%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+
+
+
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+
+
+    color: #EF8E34;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00A12D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 500;
+    width: 170px;
+    height: 40px;
+    border-radius: 500px;
+    border-width: 3px;
+
+}
+
+/*за Контактите само*/
+@media (max-width: 911px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo {
+        margin-bottom: 40px;
+    }
+
+    .container .contactInfo {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactForm {
+        width: 90%;
+        padding: 40px;
+        background: #fff;
+    }
+
+    /*Контакт инфо*/
+    .container .contactInfo {
+        width: 50% !important;
+    }
+
+    .container .contactInfo .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+
+    /*Контакт инфо*/
+    .container .contactInfo {
+        width: 100% !important;
+    }
+
+    .container .contactInfo .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+
+
+    /*Контакти съобщение*/
+    .contactForm {
+        width: 130% !important;
+        padding: 40px;
+        background: #fff;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    /*Контакт инфо*/
+    .container .contactInfo {
+        width: 110% !important;
+    }
+
+    .container .contactInfo .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+
+    /*Контакти съобщение*/
+
+    .contactForm {
+        width: 150% !important;
+        padding: 40px;
+        background: #fff;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+
+    /*Контакт инфо*/
+    .container .contactInfo {
+        width: 160% !important;
+    }
+
+    .container .contactInfo .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+
+    /*Контакти съобщение*/
+    .contactForm {
+        width: 170% !important;
+        padding: 40px;
+        background: #fff;
+    }
+}
+
+
+
+
+
+
+/**/
+.contactInfo {
+
+    margin-left: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactForm {
+    margin-left: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

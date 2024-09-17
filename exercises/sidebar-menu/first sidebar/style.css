@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppuns:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.sidebar {
+
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background-color: #11101d;
+}
+
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.logo{
+    font-size: 25px;
+    padding: 0 55px;
+}
+
+.menu-content {
+    position: relative;
+    height: 100% ;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.menu-title {
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 20px;
+}
+
+
+.item a,
+.submenu-item {
+    padding: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Hero*/
+#slider {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    /*efeect na backgrounda*/
+}
+
+
+#slider h1,
+#slider p {
+    color: white;
+}
+
+
+#slider h1 {
+    font-weight: 700;
+}
+
+#slider p {
+    max-width: 500px;
+    margin: 12px auto 28px auto;
+    /*top-"12px" right-"auto" bottom-"28px" left-"auto" */
+}
+
+
+#slider .input-group {
+    /*Input-group*/
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+}
+
+#slider .input-group input {
+    border: none;
+    background-color: transparent;
+    /*прави прозрачен input-а*/
+    color: white;
+
+}
+
+#slider .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#slider .input-group input:focus {
+    box-shadow: none;
+}

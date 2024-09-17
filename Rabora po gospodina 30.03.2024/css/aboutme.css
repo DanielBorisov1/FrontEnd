@@ -1,0 +1,1510 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-script');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+/*Helper & Reset*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "TT Norms Pro", sans-serif !important;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --brand: #EF8E34;
+    --button: #00A12D;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s linear;
+    color: white;
+}
+
+
+
+.display-1 {
+    color: var(--brand);
+    font-family: "TT Norms Pro", sans-serif !important;
+    font-weight: 700;
+}
+
+.display-2 {
+    font-family: "TT Norms Pro", sans-serif !important;
+    font-weight: 700;
+}
+
+h5,
+h4,
+h3,
+h2,
+h1,
+h6 {
+    font-family: "TT Norms Pro", sans-serif !important;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.btn-brand.btn-brand {
+    background-color: var(--brand);
+    color: #ffffff;
+    width: 170px;
+    height: 40px;
+    border-radius: 500px;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+/*responisve*/
+@media screen and (max-width: 1440px) {
+
+
+    .navbrandbar {
+        margin-left: 25px !important;
+    }
+
+}
+
+@media screen and (max-width: 1368px) {
+
+    .navbar-nav li a {
+        width: 100% !important;
+        display: inline-block;
+    }
+
+    .btn-brand1 {
+        margin-top: 10px !important;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    /*Navbar*/
+    .nav-link {
+        font-size: 14px !important;
+    }
+
+    .navbrandbar {
+        margin-left: 0 !important;
+    }
+
+    .btn-brand4 {
+
+        margin-right: 0px !important;
+    }
+
+
+    /*Contact form*/
+    .text h3 {
+        font-size: 13px !important;
+    }
+
+    .text p {
+        font-size: 13px !important;
+    }
+
+
+    /*ABOUTME PIC*/
+    .Milenaimg {
+        width: 365px !important;
+        height: 365px !important;
+    }
+
+    /*ABOUTME TEXT */
+    .milena {
+        color: var(--brand);
+        font-weight: 400;
+        font-size: 40px !important;
+        font-family: 'Segoe Script', sans-serif;
+    }
+
+    .teacher {
+        font-size: 15px !important;
+        font-weight: 500;
+        font-family: "TT Norms Pro", sans-serif !important;
+        margin-bottom: 20px;
+    }
+
+    .text-teacher {
+        font-size: 14px !important;
+        font-weight: 400;
+
+    }
+
+    .nadqaso {
+        padding-left: 100px !important;
+
+    }
+
+
+    /*ВТОРАТА СНИМКА*/
+    .img-wrapper1 .icono {
+        position: absolute !important;
+        left: 70% !important;
+        top: 225px !important;
+        border: 30px solid;
+        border-radius: 100%;
+        border-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 64px !important;
+        left: 306px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 25px !important;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: 45px !important;
+        left: 290px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 10px !important;
+        font-weight: 700 !important;
+    }
+
+
+
+    /*Reklami*/
+    .razmer {
+        width: 180px;
+    }
+
+    /*Footer*/
+    .line1 {
+        width: 270px !important;
+    }
+
+    .btn-brand01 {
+        width: 210px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    /*NavBar*/
+    .navbar {
+        padding-top: 0px !important;
+    }
+
+    .navbar-collapse {
+        background-color: rgb(255, 255, 255) !important;
+        height: 465px;
+        /*-----*/
+    }
+
+    /*Navbar button*/
+    .btn-brand4 {
+        margin-top: 10px !important;
+    }
+
+    /*EFEECTA ZAD TEKSTA NA RESPONIV MENUTO
+    .navbar .nav-item.active {
+        background: var(--brand);
+        border-radius: 8px;
+        width: 300px;
+    }
+
+    .navbar .nav-item.active a,
+    .navbar .nav-item.active a:hover {
+        color: #fff;
+    }
+
+    .navbar .nav-item a {
+        color: #18e7e7;
+    }*/
+
+    .nav-item a:hover {
+        color: var(--brand) ;
+        transition: 0.4s ease;
+    }
+
+    .collapse {
+        width: 100% !important;
+    }
+
+    .nav-item a {
+        color: rgb(0, 0, 0) !important;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+
+    .btn-brand4 {
+        align-items: center !important;
+        margin-left: 275px !important;
+    }
+
+    .navbar-nav {
+        justify-content: left !important;
+        align-items: left !important;
+    }
+
+    /*About me*/
+    #contactus {
+        padding-top: 50px !important;
+    }
+
+
+    /*Първата снимка*/
+    .Milenaimg {
+        width: 475px;
+        height: 475px;
+        margin-left: 160px;
+
+    }
+
+    .Milenapic .img-wrapper1 {
+        height: 100%;
+        width: 100% !important;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 30px;
+    }
+
+    /*Втората снимка*/
+    .img-wrapper1 .icono {
+        position: absolute !important;
+        left: 70%;
+        top: 275px;
+        border: 30px solid;
+        border-radius: 100%;
+        border-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 95px !important;
+        left: 520px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 45px;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: 75px !important;
+        left: 505px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .icono {
+        width: 186px !important;
+        height: 186px !important;
+    }
+
+    /*text*/
+    .milena {
+        color: var(--brand);
+        font-weight: 400;
+        font-size: 60px;
+        font-family: 'Segoe Script', sans-serif;
+        padding-left: 160px;
+    }
+
+    .teacher {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "TT Norms Pro", sans-serif !important;
+        margin-bottom: 20px;
+        padding-left: 210px;
+    }
+
+    .text-teacher {
+        font-weight: 400;
+        text-align: center !important;
+    }
+
+    .nadqaso {
+        padding-left: 40px !important;
+    }
+
+    /*social-links*/
+    .social-links1 {
+        padding-left: 250px !important;
+    }
+
+
+    /*Footer*/
+    .line1 {
+        width: 130px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+    /*Navbar*/
+    .btn-brand4 {
+        align-items: center !important;
+        margin-left: 107px !important;
+    }
+
+    .navbar .nav-item.active {
+        background: var(--brand);
+        border-radius: 8px;
+        width: 240px;
+    }
+
+    .razmer {
+        width: 150px !important;
+    }
+
+    .gradeup {
+        margin-top: 80px !important;
+    }
+
+
+    .marginala {
+        padding-bottom: 50px !important;
+    }
+
+    /*BTN FORMS*/
+    .btn-brandbog.btn-brandbog {
+        width: 220px !important;
+        height: 40px !important;
+    }
+
+
+
+    /*Първата снимка*/
+    .Milenaimg {
+        width: 475px;
+        height: 475px;
+        margin-left: 0px;
+
+    }
+
+    .Milenapic .img-wrapper1 {
+        height: 100%;
+        width: 100% !important;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 0px !important;
+    }
+
+    /*Втората снимка*/
+    .img-wrapper1 .icono {
+        position: absolute !important;
+        left: 70%;
+        top: 275px;
+        border: 30px solid;
+        border-radius: 100%;
+        border-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 65px !important;
+        left: 315px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 45px;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: 45px !important;
+        left: 300px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .icono {
+        width: 186px !important;
+        height: 186px !important;
+    }
+
+    /*text*/
+    .milena {
+        color: var(--brand);
+        font-weight: 400;
+        font-size: 35px !important;
+        font-family: 'Segoe Script', sans-serif;
+        padding-left: 30px;
+    }
+
+    .teacher {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "TT Norms Pro", sans-serif !important;
+        margin-bottom: 20px;
+        padding-left: 50px;
+    }
+
+    .text-teacher {
+        font-weight: 400;
+        text-align: center !important;
+    }
+
+    .nadqaso {
+        padding-left: 10px !important;
+    }
+
+    /*social-links*/
+    .social-links1 {
+        padding-left: 100px !important;
+    }
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+    /*Navbar*/
+    .btn-brand4 {
+        align-items: center !important;
+        margin-left: 80px !important;
+    }
+
+    /*.navbar .nav-item.active {
+        background: var(--brand);
+        border-radius: 8px;
+        width: 220px;
+    }*/
+
+
+
+
+    /*Първата снимка*/
+    .Milenaimg {
+        width: 305px !important;
+        height: 305px !important;
+        margin-left: 0px;
+
+    }
+
+    .Milenapic .img-wrapper1 {
+        height: 100%;
+        width: 100% !important;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 0px !important;
+    }
+
+    /*Втората снимка*/
+    .img-wrapper1 .icono {
+        position: absolute !important;
+        left: 65% !important;
+        top: 185px !important;
+        border: 30px solid;
+        border-radius: 100%;
+        border-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 50px !important;
+        left: 265px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 45px;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: 30px !important;
+        left: 248px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 10px !important;
+        text-align: center !important;
+        font-weight: 700;
+    }
+
+    .icono {
+        width: 186px !important;
+        height: 186px !important;
+    }
+
+    /*text*/
+    .milena {
+        color: var(--brand);
+        font-weight: 400;
+        font-size: 30px !important;
+        font-family: 'Segoe Script', sans-serif;
+        padding-left: 30px;
+    }
+
+    .teacher {
+        font-size: 14px !important;
+        font-weight: 500;
+        font-family: "TT Norms Pro", sans-serif !important;
+        margin-bottom: 20px;
+        padding-left: 45px;
+    }
+
+    .text-teacher {
+        font-weight: 400;
+        text-align: center !important;
+    }
+
+    .nadqaso {
+        padding-left: 10px !important;
+    }
+
+    /*social-links*/
+    .social-links1 {
+        padding-left: 100px !important;
+    }
+
+    /*Footer*/
+    .btn-brand01 {
+        width: 330px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+    /*Navbar*/
+    .btn-brand4 {
+        align-items: center !important;
+        margin-left: 55px !important;
+    }
+
+    .navbar .nav-item.active {
+        background: var(--brand);
+        border-radius: 8px;
+        width: 180px;
+    }
+
+    .btn-secondary {
+        margin-left: 80px !important;
+        margin-top: 10px !important;
+    }
+
+
+
+    /*BTN FORMS*/
+    .btn-brandbog.btn-brandbog {
+        width: 200px !important;
+        height: 40px !important;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+
+    /*CONTACT FORM*/
+    .text h3 {
+        font-size: 15px !important;
+    }
+
+    .text p {
+        font-size: 12px !important;
+    }
+
+
+
+    /*Първата снимка*/
+    .Milenaimg {
+        width: 255px !important;
+        height: 255px !important;
+        margin-left: 0px;
+
+    }
+
+    .Milenapic .img-wrapper1 {
+        height: 100%;
+        width: 100% !important;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 0px !important;
+    }
+
+    /*Втората снимка*/
+    .img-wrapper1 .icono {
+        position: absolute !important;
+        left: 65% !important;
+        top: 160px !important;
+        border: 30px solid;
+        border-radius: 100%;
+        border-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+
+        width: 126px !important;
+        height: 126px !important;
+
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 25px !important;
+        left: 225px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 45px;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: 10px !important;
+        left: 209px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 10px !important;
+        text-align: center !important;
+        font-weight: 700;
+    }
+
+
+
+    /*text*/
+    .milena {
+        color: var(--brand);
+        font-weight: 400 !important;
+        font-size: 27px !important;
+        font-family: 'Segoe Script', sans-serif;
+        padding-left: 28px;
+    }
+
+    .teacher {
+        font-size: 12px !important;
+        font-weight: 500;
+        font-family: "TT Norms Pro", sans-serif !important;
+        margin-bottom: 20px;
+        padding-left: 45px;
+    }
+
+    .text-teacher {
+        font-weight: 400;
+        text-align: center !important;
+    }
+
+    .nadqaso {
+        padding-left: 10px !important;
+    }
+
+    /*social-links*/
+    .social-links1 {
+        padding-left: 70px !important;
+    }
+
+
+    /*Contact form*/
+    .container .box .text {
+        display: flex;
+        margin-left: 20px;
+        font-size: 12px !important;
+        color: #999999;
+        flex-direction: column;
+        font-weight: 400;
+
+    }
+
+
+    .container .box .text h3 {
+        color: black;
+        font-weight: 600;
+        font-size: 15px !important;
+    }
+
+
+
+
+    /*footer*/
+    .line1 {
+        width: 100px !important;
+    }
+
+    .btn-brand01 {
+        width: 270px !important;
+    }
+
+
+}
+
+
+/*Responsive 2*/
+
+@media only screen and (min-width: 376px) and (max-width: 415px) {
+
+
+    /*ВТОРАТА СНИМКА*/
+    .img-wrapper1 .icono {
+        position: absolute !important;
+        left: 60% !important;
+        top: 235px !important;
+        border: 30px solid;
+        border-radius: 100%;
+        border-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 55px !important;
+        left: 270px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 25px !important;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: 25px !important;
+        left: 240px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+      /*text*/
+      .milena {
+        color: var(--brand);
+        font-weight: 400;
+        font-size: 30px !important;
+        font-family: 'Segoe Script', sans-serif;
+        padding-left: 30px;
+    }
+
+    .teacher {
+        font-size: 14px !important;
+        font-weight: 500;
+        font-family: "TT Norms Pro", sans-serif !important;
+        margin-bottom: 20px;
+        padding-left: 45px;
+    }
+
+}
+
+@media only screen and (min-width: 375.5px) and (max-width: 376px) {
+
+     /*Първата снимка*/
+     .Milenaimg {
+        width: 335px !important;
+        height: 335px !important;
+        
+
+    }
+
+
+    /*ВТОРАТА СНИМКА*/
+    .img-wrapper1 .icono {
+        position: absolute !important;
+        left: 60% !important;
+        top: 215px !important;
+        border: 30px solid;
+        border-radius: 100%;
+        border-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 45px !important;
+        left: 245px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 25px !important;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: -5px !important;
+        left: 237px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+    
+    /*text*/
+    .milena {
+        color: var(--brand);
+        font-weight: 400;
+        font-size: 30px !important;
+        font-family: 'Segoe Script', sans-serif;
+        padding-left: 30px;
+    }
+
+    .teacher {
+        font-size: 14px !important;
+        font-weight: 500;
+        font-family: "TT Norms Pro", sans-serif !important;
+        margin-bottom: 20px;
+        padding-left: 45px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 360px) {
+
+    
+     /*Първата снимка*/
+     .Milenaimg {
+        width: 335px !important;
+        height: 335px !important;
+        
+
+    }
+
+
+    /*ВТОРАТА СНИМКА*/
+    .img-wrapper1 .icono {
+        position: absolute !important;
+        left: 60% !important;
+        top: 215px !important;
+        border: 30px solid;
+        border-radius: 100%;
+        border-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 45px !important;
+        left: 240px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 25px !important;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: -5px !important;
+        left: 220px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+    
+    /*text*/
+    .milena {
+        color: var(--brand);
+        font-weight: 400;
+        font-size: 28px !important;
+        font-family: 'Segoe Script', sans-serif;
+        padding-left: 30px;
+    }
+
+    .teacher {
+        font-size: 14px !important;
+        font-weight: 500;
+        font-family: "TT Norms Pro", sans-serif !important;
+        margin-bottom: 20px;
+        padding-left: 45px;
+    }
+
+    /*footer button*/
+    .btn-brand01.btn-brand01 {
+        margin-top: 10px !important;
+        color: white;
+        background-color: var(--brand);
+        width: 180px !important;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 393px) and (max-width: 394px) {
+
+    /*Първата снимка*/
+    .Milenaimg {
+        width: 335px !important;
+        height: 335px !important;
+        
+
+    }
+
+
+    /*ВТОРАТА СНИМКА*/
+    .img-wrapper1 .icono {
+        position: absolute !important;
+        left: 60% !important;
+        top: 215px !important;
+        border: 30px solid;
+        border-radius: 100%;
+        border-color: #ffffff;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 45px !important;
+        left: 255px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 25px !important;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: 15px !important;
+        left: 230px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 13px !important;
+        font-weight: 700 !important;
+    }
+    
+    /*text*/
+    .milena {
+        color: var(--brand);
+        font-weight: 400;
+        font-size: 28px !important;
+        font-family: 'Segoe Script', sans-serif;
+        padding-left: 30px;
+    }
+
+    .teacher {
+        font-size: 14px !important;
+        font-weight: 500;
+        font-family: "TT Norms Pro", sans-serif !important;
+        margin-bottom: 20px;
+        padding-left: 45px;
+    }
+
+    /*footer button*/
+    .btn-brand01.btn-brand01 {
+        margin-top: 10px !important;
+        color: white;
+        background-color: var(--brand);
+        width: 180px !important;
+        height: 40px;
+    }
+}
+
+
+/*Gospodina*/
+@media only screen and (min-width: 376px) and (max-width: 393px) {
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag {
+        border-radius: 100px;
+        bottom: 45px !important;
+        left: 265px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 25px !important;
+        color: var(--button);
+        font-weight: 700;
+    }
+
+    /*Text inside in pic*/
+    .img-wrapper1 .tag69 {
+        border-radius: 100px;
+        bottom: 15px !important;
+        left: 240px !important;
+        text-decoration: none;
+        position: absolute;
+        /*Вкара текста вътре в снимката*/
+        font-size: 13px !important;
+        font-weight: 700 !important;
+    }
+}
+
+/*Navbar*/
+.navbar {
+    position: absolute !important;
+    /*position:fixed !important;- направи nav-a да се слива със slidera*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    /*display: flex;- пак центрира*/
+    /*padding-bottom: 30px; широчината на navbar*/
+    z-index: 999;
+    padding-top: 5px;
+    align-items: center;
+
+}
+
+.navbar {
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.nav-item a:hover {
+    color: var(--brand) !important;
+    transition: 0.4s ease;
+}
+
+#NavButton {
+    width: auto;
+    box-shadow: none;
+}
+
+.navbrandbar span {
+    color: var(--brand);
+    font-size: 39px;
+}
+
+.navbrandbar {
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    margin-left: 100px;
+    font-family: "TT Norms Pro", sans-serif !important;
+}
+
+.nav-item a {
+    color: black !important;
+    display: block;
+    font-family: "TT Norms Pro", sans-serif !important;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+/*Оцветяване на иконката за responsive navbar
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}*/
+
+.navbar-nav {
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/*Контакти*/
+.btn-brand4.btn-brand4 {
+    background-color: var(--brand);
+    color: #ffffff;
+    width: 170px;
+    height: 40px;
+    border-radius: 500px;
+    margin-right: 100px;
+    font-weight: 500;
+    padding-right: 40px !important;
+}
+
+.fa-phone {
+    margin-right: 20px !important;
+}
+
+.btn-brand4:hover {
+    background-color: #ef8e34e3;
+}
+
+
+/*HOME / Контакти*/
+#ts {
+    padding-top: 80px;
+}
+
+#ts h6 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.spanCont {
+    color: var(--brand);
+}
+
+.nachalo {
+    color: black;
+}
+
+
+/*About me*/
+#contactus {
+    padding-top: 110px;
+}
+
+/*PIC*/
+
+/*Първата снимка*/
+.Milenaimg {
+    width: 475px;
+    height: 475px;
+}
+
+.Milenapic .img-wrapper1 {
+    height: 100%;
+    width: 100% !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Втората снимка*/
+.img-wrapper1 .icono {
+    position: absolute !important;
+    left: 70%;
+    top: 275px;
+    border: 30px solid;
+    border-radius: 100%;
+    border-color: #ffffff;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+/*Text inside in pic*/
+.img-wrapper1 .tag {
+    border-radius: 100px;
+    bottom: 85px;
+    left: 430px;
+    text-decoration: none;
+    position: absolute;
+    /*Вкара текста вътре в снимката*/
+    font-size: 45px;
+    color: var(--button);
+    font-weight: 700;
+}
+
+/*Text inside in pic*/
+.img-wrapper1 .tag69 {
+    border-radius: 100px;
+    bottom: 65px;
+    left: 415px;
+    text-decoration: none;
+    position: absolute;
+    /*Вкара текста вътре в снимката*/
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.icono {
+    width: 186px;
+    height: 186px;
+}
+
+
+
+/*text*/
+.milena {
+    color: var(--brand);
+    font-weight: 400;
+    font-size: 60px;
+    font-family: 'Segoe Script', sans-serif;
+}
+
+.teacher {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "TT Norms Pro", sans-serif !important;
+    margin-bottom: 20px;
+}
+
+.text-teacher {
+    font-weight: 400;
+}
+
+.nadqaso {
+    padding-left: 40px;
+}
+
+
+
+
+/*icons*/
+.social-links1 a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--button);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 100%;
+    text-decoration: none;
+    /*маха подчертаното от текста*/
+}
+
+/*Forms boxs*/
+.form-control:hover {
+    border-color: var(--brand);
+    box-shadow: none;
+}
+
+.form-control {
+    background-color: #F1F2F6;
+    border: none;
+}
+
+
+
+
+/*Contact form*/
+/*BOX SHADOW + BORDER RADIUS*/
+#contactform {
+    padding-top: 70px !important;
+}
+
+.custom-card {
+    transition: all 0.4s ease;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px;
+    padding-bottom: 10px !important;
+    align-items: center;
+    padding-left: 20px !important;
+}
+
+.container .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .box .icon {
+    min-width: 60px;
+    height: 60px;
+    color: #00A12D;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.13);
+}
+
+.container .box .icon1 {
+    min-width: 60px;
+    height: 60px;
+    color: #00A12D;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding-left: 15px;
+    font-size: 22px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.13);
+}
+
+
+.container .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #999999;
+    flex-direction: column;
+    font-weight: 400;
+
+}
+
+
+.container .box .text h3 {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+/*Reklami*/
+#Reklami {
+    padding-top: 30px;
+    align-items: center;
+    align-items: center !important;
+    padding-bottom: 0px;
+}
+
+.google {
+    align-items: center !important;
+    margin-top: 100px;
+}
+
+.grab {
+    align-items: center !important;
+    margin-top: 85px;
+}
+
+.gradeup {
+    margin-top: 60px;
+}
+
+.borisov {
+    margin-top: 100px;
+}
+
+/*Footer*/
+footer p,
+footer ul li a {
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer h6 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.shizo {
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: "TT Norms Pro", sans-serif !important;
+    margin-bottom: 0px;
+}
+
+.Lang {
+    color: var(--brand);
+    font-size: 39px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links a {
+    transition: none !important;
+    transform: none !important;
+    color: black;
+    width: 20px !important;
+    font-size: 30px;
+}
+
+.line {
+    width: 120px;
+}
+
+.btn-brand01.btn-brand01 {
+    margin-top: 10px !important;
+    color: white;
+    background-color: var(--brand);
+    width: 300px;
+    height: 40px;
+}
+
+.line1 {
+    width: 340px;
+}
+
+.MBT {
+    padding-top: 60px;
+}
+
+.footer-top {
+    background-attachment: fixed;
+    padding-top: 0px;
+    padding-bottom: 70px;
+}
