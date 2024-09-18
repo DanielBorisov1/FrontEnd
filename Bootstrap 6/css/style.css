@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,500;1,600&family=Plus+Jakarta+Sans:wght@400;500&display=swap');
+
+:root {
+    --brand: #B33030;
+    --body: #606060;
+    --black: #000;
+    --border-radius: 4px;
+    --shadow: 0px 4px 60px rgba(0, 0, 0, 0.14);
+}
+
+/*Helper & Reset*/
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+a {
+    color: var(--black);
+    text-decoration: none;
+    transition: all 0.4s linear;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+/*Button*/
+.btn {
+    padding: 12px 28px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-brand {
+    background-color: var(--brand);
+    color: white;
+}
+.btn-brand:hover {
+    color: white;
+    background-color: var(--brand);
+}
+
+
+
+
+/*Navbar*/
+.navbar.bg-white {
+    /*.bg-white*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: fixed !important;
+    /*position:fixed !important;- направи nav-a да се слива със slidera*/
+    width: 100%;
+
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:active {
+    color: var(--brand);
+}
+
+.logo {
+    width: 100px;
+    /*margin-left: -200px; - може да си мърдаш логото наляво*/
+}
+
+
+/*Active HOME*/
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link:active {
+    color: var(--brand);
+}
+
+
+
+/*Dropdown-menu*/
+/* @media only screen and (min-width: 768px){
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+}*/
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+
+
+
+
+/*Slider*/
+#slider {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    /*efeect na backgrounda*/
+}
+
+
+#slider h1,
+#slider p {
+    color: white;
+}
+
+
+#slider h1 {
+    font-weight: 700;
+}
+
+#slider p {
+    max-width: 500px;
+    margin: 12px auto 28px auto;
+    /*top-"12px" right-"auto" bottom-"28px" left-"auto" */
+}
+
+
+#slider .input-group {
+    /*Input-group*/
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+}
+
+#slider .input-group input {
+    border: none;
+    background-color: transparent;
+    /*прави прозрачен input-а*/
+    color: white;
+
+}
+
+#slider .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#slider .input-group input:focus {
+    box-shadow: none;
+}
+
+
+
+
+/*SERVICES*/
+/*Our-Services*/
+.section-intro {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.section-intro p {
+    max-width: 500px;
+    margin: auto;
+
+
+}
+
+.section-intro h1 {
+    color: black;
+}
+
+
+/*Service*/
+.service {
+    padding: 44px 24px;
+    text-align: center;
+}
+
+.service h5 {
+    margin-top: 28px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+
+.service p {
+    font-size: 14px;
+
+}
+
+/*Icon-Service*/
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/*Read More- Service*/
+a.custom-link {
+    text-transform: uppercase;
+    font-weight: 900;
+    /*удебеляване на шрифта*/
+    font-size: 14px;
+}
+
+/*Transition-Service*/
+.custom-card {
+    transition: all 0.4s ease;
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+
+.custom-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}
+
+
+
+/*CTA*/
+#cta {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*efeect na backgrounda*/
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+
+#cta h2 {
+    color: white;
+    font-size: 35px;
+
+}
+
+#cta p {
+    color: white;
+}
+
+#cta .row {
+   
+    justify-content: center;
+
+}
+
+
+/*PORTFOLIO*/
+.project-wrapper {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /*комбинира се с  transform: scale(1.2); */
+}
+
+.project-wrapper img {
+    height: 100%;
+    object-fit: cover;
+    /*Оправя ги от стреча*/
+    transition: all 0.8s ease;
+}
+
+.project-wrapper .btn {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+
+.project-wrapper:hover .btn-brand {
+    top: 50%;
+    opacity: 1;
+}
+
+
+
+.project-wrapper:hover img {
+    transform: scale(1.2);
+    filter: blur(2px);
+    /*размазва-blur*/
+}
+
+/*Reviews*/
+#testimonial {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*efeect na backgrounda*/
+}
+
+#testimonial .section-intro h1,
+#testimonial .section-intro p {
+    color: white;
+}
+
+
+.review {
+    padding: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+}
+
+.review .stars {
+    color: orange;
+}
+
+.review p {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+.review h6,
+.review small {
+    color: white;
+
+}
+
+
+.review span {
+    color: var(--brand);
+}
+
+.review img {
+    width: 200px !important;
+    border-radius: 100px;
+}
+
+#testimonial .owl-dot span {
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    width: 12px;
+    height: 12px;
+    transition: all 0.6s ease;
+
+
+}
+
+
+#testimonial .owl-dot.active span {
+    width: 30px;
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+
+/*Team*/
+.team-member {
+    text-align: center;
+    height: max-content;
+    width: auto;
+    padding-bottom: 70px;
+
+}
+
+.team-member .team-member-img {
+    position: relative;
+    overflow: hidden;
+    /*zoom-ва само вътре в img */
+
+
+}
+
+
+.team-member h5 {
+    color: black;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+
+
+.social-links {
+    display: flex;
+
+}
+
+ /*иконките*/
+.social-links a {
+    
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand);
+    margin-left: 4px;
+    margin: 4px;
+}
+
+
+.social-links a:hover {
+    background-color: var(--brand);
+    color: white;
+}
+
+
+.team-member .social-links {
+    position: absolute; /*вкарва social-links вътре в снимката*/
+    
+    bottom: 70px;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.team-member:hover .social-links {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.team-member:hover img {
+    /*код за zoom*/
+    transform: scale(1.1);
+}
+
+.team-member img {
+    /*код за zoom*/
+    transition: all 0.5s ease;
+}
+
+/*Milestone*/
+
+#milestone {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*efeect na backgrounda*/
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.counter .divider {
+    /*Линия*/
+    width: 70px;
+    height: 2px;
+    background-color: var(--brand);
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.counter h1 {
+    line-height: 1;
+}
+
+.counter h1,
+.counter p {
+
+    color: white;
+}
+
+/*Blog*/
+.blog-post {
+    text-align: center;
+}
+
+.blog-post img {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.blog-post .tag {
+    padding: 4px 12px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    /*удебелява текста*/
+    background-color: var(--brand);
+    border-radius: 3px;
+}
+
+
+.blog-post-content {
+    padding: 28px;
+}
+
+.tag {
+    color: white;
+}
+
+.blog-post h4 {
+    margin-top: 14px;
+    /*отдалечава текта (не мога да го обесня)*/
+}
+
+
+/*Contact*/
+#contact input.form-control {
+    height: 49px;
+   
+}
+
+#contact .form-control {
+    background-color: white;
+    border-color: white;
+    
+}
+
+#contact .form-control:focus  { 
+    box-shadow: none !important;
+    border-color: var(--brand);
+}
+
+#contact .map {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Footer */
+footer p,
+footer ul li a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer h6 {
+    color: white;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-top {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+.footer-top .logo-footer {  
+     margin-bottom: 16px;
+}
+
+
+.footer-bottom {
+    background-color: var(--brand);
+    padding-top: 12px;
+    padding-bottom: 16px;
+    
+
+}
