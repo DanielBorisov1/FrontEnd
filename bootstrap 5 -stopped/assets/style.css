@@ -1,0 +1,335 @@
+/*Googel fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500&display=swap');
+
+/*Helper & Reset*/
+:root {
+    --c-brand: #fac562;
+    --c-dark: #333;
+    --c-body: #666;
+    --f-base: "Plus Jakarta Sans", sans-serif;
+    --n-height: 100px;
+
+}
+
+*,*::after, *::before {                         /*selectva vsichko*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    color: var(--c-body);                        /*(--c-) colour*/
+    font-family: var(--f-base);                 /*(--f-) font */
+    line-height: 1.2;
+   
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--c-dark);
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.heading-xl{
+    font-size: clamp(44px, 10vw, 100px);          /*готови написани команди за уголемяване на текста */  /*направи текста responsive*/
+    text-transform: uppercase;
+}
+
+.heading-1{
+    font-size: clamp(32px, 6vw, 54px);          /*готови написани команди за уголемяване на текста */ /*направи текста responsive*/
+}
+
+
+.heading-2{
+    font-size: clamp(28px, 4vw, 36px);         /*готови написани команди за уголемяване на текста */   /*направи текста responsive*/
+}
+
+.heading-3{
+    font-size: 20px; 
+}
+
+ul{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    width:100%;
+}
+
+a {
+    color: var(--c-body);
+    text-decoration: none;                        /*маха подчертаното*/
+    transition: all 0.4s ease-in-out; 
+}
+
+
+
+a:hover {
+    color: var(--c-brand)
+}
+
+
+section {
+    padding:140px 0;
+}
+
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right:24px;
+
+}
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--c-brand);
+    font-family: var(--f-base);
+    padding: 16px 34px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: var(--c-brand);
+    color:white;
+}
+
+
+
+
+/*Navbar*/
+.navbar { 
+    position:fixed !important;                     /*position:fixed !important;- направи nav-a да се слива със slidera*/
+    top:0;
+    left:0;
+    width: 100%;  
+    height: var(--n-height);
+    display: flex;                                 /*display: flex;- пак центрира*/ /*padding-bottom: 30px; широчината на navbar*/
+    z-index: 999; 
+      
+}                         
+
+.nav-links {
+    display: flex;
+}
+
+
+.navbar .container {              
+    display: flex;
+    align-items: center;                             /* align-items: center; -центрира;*/
+    justify-content: space-between;                  /* justify-content: space-between; -разтояние между*/
+   
+}
+
+
+.nav-links li:not(:last-child) {                      /*тук подреждаме nav-bara*/
+ margin-right: 44px;
+}
+
+
+
+.nav-links li.active a {
+    box-shadow: 0 2px var(--c-brand);                  /*подчертава текста (HOME)*/
+   
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;                               /*text-transform: uppercase;- в моите очи прави текста с главни букви*/
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+
+.nav-links li a:hover {
+    color: var(--c-brand);
+   
+}
+
+/*Brand*/
+.brand {
+    color:rgb(255, 255, 255);
+    font-size:  28px;
+    text-decoration: none;
+}
+
+
+/*scrolled-navbar*/
+.scrolled {
+    background-color: white; 
+    
+}
+
+
+.scrolled .brand {
+    color: var(--c-dark);
+    text-decoration: none;
+}
+
+.scrolled .nav-links li a {
+    color: var(--c-dark);
+}
+
+
+.scrolled .nav-links li a:hover {
+    color: var(--c-brand);
+}
+
+
+.scrolled .hamburger span {
+    background-color: var(--c-dark);
+}
+
+
+
+
+
+
+/*Responsive Button NavBar*/
+.hamburger {
+    display: block;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger span {
+    display:block;
+    width: 34px;
+    height: 2px;
+    background-color: white;
+    margin: 8px auto;
+    transition:all 0.4s ease;
+}
+
+/*Правенето на X на бутона*/
+.hamburger.active span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    transform: translateY(-5px) rotate(-45deg);
+ }
+
+
+/*Responsive Button на NavBar- nav itemite вътре*/
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: var(--n-height);
+        left: 0; 
+        width: 100%;
+        flex-direction:column;
+        padding: 0 24px;
+        transition: all 0.3s ease-in-out;
+        height: 0;
+        overflow: hidden;
+        justify-content: center;
+        background-color: white;
+       
+    }
+
+    
+    .nav-links li a {
+        color: var(--c-dark);
+    }
+
+    .nav-links.active {
+        height: 200px;
+    }
+ 
+    .nav-links li {
+      padding: 6px 0; /*6px-top 0-left&right  */
+    }
+
+    .hamburger {     /* Responsive Button */
+        display: block;
+    }
+}
+
+
+/*Slider*/
+
+#hero{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../img/two-business-partners-working-together-office.jpg);
+    background-position: center; 
+    background-size: cover;  /*центрира снимката направо муцка*/
+    display: grid;
+    place-content: center; /*това центрира текста*/
+    text-align: center;
+}
+
+
+#hero h1 {
+    color: white;
+}
+
+
+/*Button for scroll down*/
+
+/*Transition*/
+@keyframes scrolltodown {
+    0% {
+        transform: translateY(30%);
+        opacity:0;
+    }
+
+    50%{
+        transform: translateY(-30%);
+        opacity:1;
+    }
+
+    100%{
+        transform: translateY(60%);
+        opacity:0;
+    }
+}
+
+
+
+
+.scroll-to-down {
+    width: 30px;
+    height: 60px;
+    font-size: 24px;
+    border: 2px solid rgba(255,255,255, 0.2 );
+    border-radius: 100px;
+    color:white;
+    text-decoration: none;
+      /*Position*/
+    display:grid;
+    place-content: center;
+    position: absolute;
+    bottom:50px;
+    left:50%;
+}
+
+
+.scroll-to-down .las{
+    animation: scrolltodown 2s ease infinite;
+}
+
+/*Grid*/
+.grid {
+  display: grid;
+  gap: 44px;
+  
+}
+
+
+/*Service*/

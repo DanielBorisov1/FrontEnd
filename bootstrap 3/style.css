@@ -1,0 +1,40 @@
+
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+
+
+
+@media(min-width: 768px) {
+    .news-input{
+           width: 50%;
+    }
+    
+}
+
+
+
+#map{
+    width:100%;
+    height: 100;
+    border: 1px;
+
+}
+
+.imgfluid {
+    height:300px;
+    border: 4px solid #0072f5;
+    border-radius: 50px  50px;
+    float: right;
+}
+    
+
+
+.imgfluid1{
+    height:300px;
+    border: 4px solid #000000;
+    border-radius: 50px  50px;
+}
