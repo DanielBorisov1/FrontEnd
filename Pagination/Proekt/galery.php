@@ -34,7 +34,6 @@
 
 <body>
 
-
     <!-- =======  NAVBAR =======  -->
     <nav class="navbar navbar-expand-lg bg-white shadow sticky-top py-3">
         <div class="container">
@@ -77,7 +76,6 @@
         </div>
     </nav>
 
-
     <!--Gallery-->
     <svg class="d-none" xmlns="http://www.w3.org/2000/svg">
         <symbol id="enlarge" viewBox="0 0 16 16">
@@ -88,7 +86,7 @@
         </symbol>
     </svg>
 
-    <h1 class="text-center mb-0">Bootstrap 5 Lightbox Gallery</h1>
+    <h1 class="text-center mb-0 pt-5">Bootstrap 5 Lightbox Gallery</h1>
     <p class="text-center mb-4">Click an image to reveal the lightbox</p>
 
     <section class="photo-gallery">
@@ -143,20 +141,6 @@
         </div>
     </section>
 
-    <footer id="copyright" class="mt-5 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p class="mb-0">With <b>Bootstrap 5.3.2</b> and <b>Vanilla JS</b></p>
-                    <p class="mb-0">Photos source: <a target="_blank" href="https://picsum.photos">Picsum photos</a></p>
-                    <p class="mb-0">Code made by <a target="_blank" href="https://adorade.ro">Adorade</a>. License <b>MIT</b></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
     <div class="modal fade lightbox-modal" id="lightbox-modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen">
             <div class="modal-content">
@@ -173,7 +157,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
                     <div class="lightbox-content">
-                        
+
                         <!-- JS content here -->
                         <script>
                             const html = document.querySelector('html');
@@ -314,8 +298,33 @@
             </div>
         </div>
     </div>
+    <!--Gallery end-->
 
 
+    <!--Pagination-->
+    <div class="container">
+        <button class="button" disabled>
+            <i class="fa-solid fa-angles-left"></i>
+        </button>
+        <button class="button" disabled>
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <div class="links">
+            <a href="" class="link">1</a>
+            <a href="" class="link">2</a>
+            <a href="" class="link">3</a>
+            <a href="" class="link">4</a>
+            <a href="" class="link">5</a>
+        </div>
+
+        <button class="button">
+            <i class="fa-solid fa-angles-right"></i>
+        </button>
+        <button class="button">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+    </div>
 
 
 
@@ -408,16 +417,9 @@
     </footer>
 
 
-
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/app.js"></script>
-
-
-
-
-
-
 </body>
 
 </html>
