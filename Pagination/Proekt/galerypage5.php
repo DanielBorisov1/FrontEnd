@@ -103,40 +103,13 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a class="gallery-item" href="https://picsum.photos/id/74/1200/800.webp">
-                        <img src="https://picsum.photos/id/74/480/320.webp" class="img-fluid" alt="Dolor lorem ipsum sit amet">
+                    <a class="gallery-item" href="https://picsum.photos/id/678/1200/800.webp">
+                        <img src="https://picsum.photos/id/678/480/320.webp" class="img-fluid" alt="Ipsum lorem dolor sit amet">
                     </a>
                 </div>
-                <div class="col">
-                    <a class="gallery-item" href="https://picsum.photos/id/92/1200/800.webp">
-                        <img src="https://picsum.photos/id/92/480/320.webp" class="img-fluid" alt="Sit amet lorem ipsum dolor">
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="gallery-item" href="https://picsum.photos/id/62/1200/800.webp">
-                        <img src="https://picsum.photos/id/62/480/320.webp" class="img-fluid" alt="Aut ipsam deserunt nostrum quo">
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="gallery-item" href="https://picsum.photos/id/575/1200/800.webp">
-                        <img src="https://picsum.photos/id/575/480/320.webp" class="img-fluid" alt="Nulla ex nihil eligendi tempora">
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="gallery-item" href="https://picsum.photos/id/110/1200/800.webp">
-                        <img src="https://picsum.photos/id/110/480/320.webp" class="img-fluid" alt="Nemo perspiciatis voluptatum">
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="gallery-item" href="https://picsum.photos/id/177/1200/800.webp">
-                        <img src="https://picsum.photos/id/177/480/320.webp" class="img-fluid" alt="Accusantium consequuntur modi">
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="gallery-item" href="https://picsum.photos/id/197/1200/800.webp">
-                        <img src="https://picsum.photos/id/197/480/320.webp" class="img-fluid" alt="Dolore asperiores reprehenderit">
-                    </a>
-                </div>
+                
+             
+
             </div>
         </div>
     </section>
@@ -306,16 +279,18 @@
     <div class="container pt-5">
 
         <div class="pagination d-flex justify-content-center">
-            <a href=""><</a>
-             <a href="galery.php" class="active">1</a>
-                    <a href="galerypage2.php">2</a>
-                    <a href="">3</a>
-                    <a href="">4</a>
-                    <a href="">5</a>
-                    <a href="galerypage2.php">></a>
+            <a href="galerypage4.php"><</a>
+                    <a href="galery.php">1</a>
+                    <a href="galerypage2.php" >2</a>
+                    <a href="galerypage3.php">3</a>
+                    <a href="galerypage4.php">4</a>
+                    <a href="galerypage5.php" class="active">5</a>
+                    <a href="galery.php">></a>
 
         </div>
     </div>
+
+
 
     <!-- =======  FOOTER ======= -->
     <footer class="bg-dark">
